@@ -2,6 +2,19 @@
 
 This repo provides some simple tooling that may help to define, build, package, and run ROS 2 distributions on debian bookworm. The ideas behind this are explained in more detail [here](./DETAILS.md).
 
+## Quickstart
+
+```bash
+# Make sure you have yq and systemd-nspawn installed
+$ sudo apt install systemd-nspawn yq
+
+# Clone this repo and build the very basic ros2-base distribution
+$ git clone https://github.com/markuspetermann/ros2-debian.git && cd ros2-debian/
+$ ./release.sh templates/ros2-base.yaml
+```
+
+This will build two Debian packages, which you can find in the `buildout/` folder. The `build.sh` script requires superuser privileges to set up and run the container; it will leave your host system untouched, though.
+
 ## release.sh
 
 The `release.sh` creates two different debian packages:
