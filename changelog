@@ -1,0 +1,5 @@
+ros2-debian (0.0.0) stable; urgency=medium
+
+  * Initial release
+
+ -- Markus Petermann <debmaint@markuspetermann.net>  Fri, 27 Jun 2025 22:28:10 +0200

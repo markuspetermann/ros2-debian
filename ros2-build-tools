@@ -1,0 +1,44 @@
+Source: ros2-debian
+Section: metapackages
+Priority: optional
+Maintainer: Markus Petermann <debmaint@markuspetermann.net>
+Homepage: https://github.com/markuspetermann/ros2-debian
+Standards-Version: 3.9.2
+
+Package: ros2-build-tools
+Copyright: copyright
+Changelog: changelog
+Architecture: any
+Depends: cmake,
+ colcon,
+ git,
+ python3-colcon-argcomplete,
+ python3-colcon-bash,
+ python3-colcon-cd,
+ python3-colcon-cmake,
+ python3-colcon-core,
+ python3-colcon-defaults,
+ python3-colcon-devtools,
+ python3-colcon-library-path,
+ python3-colcon-metadata,
+ python3-colcon-notification,
+ python3-colcon-output,
+ python3-colcon-package-information,
+ python3-colcon-package-selection,
+ python3-colcon-parallel-executor,
+ python3-colcon-python-setup-py,
+ python3-colcon-recursive-crawl,
+ python3-colcon-ros,
+ python3-colcon-test-result,
+ python3-colcon-zsh,
+ python3-rosdep2,
+ python3-rosinstall-generator,
+ python3-setuptools,
+ vcstool,
+ wget
+
+Description: ROS 2 Build Tools
+ Meta package that includes everything needed to start building a ROS 2
+ distribution from scratch. Depending on the distribution 
+ (e.g. base, core, desktop) and the packages that should be included in the
+ build, additional packages are needed.
